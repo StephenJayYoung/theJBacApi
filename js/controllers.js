@@ -1,8 +1,8 @@
 'use strict';
 
-function AppCtrl ($scope){
-	$scope.name = "World"
-	$scope.updateName = function() {
-		$scope.name = "World from function";
-	}
-}
+var controllers = angular.module('stravaApi.controllers',[]);
+
+controllers.controller('AppCtrl', function ($scope) {
+	$scope.name = "Module";
+
+})
